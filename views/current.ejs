@@ -1,0 +1,29 @@
+<div class="current">
+  <h2>YOUR TASKS</h2>
+  <ul class="to-do-items">
+    <li>
+      <input class="checkbox" type="checkbox" name="current-checkbox">
+      <h3>Running and Exercise</h3>
+      <button class="current-close" >&#x274C</button>
+    </li>
+    <li>
+        <input class="checkbox" type="checkbox" name="current-checkbox">
+        <h3>Running and Exercise</h3>
+        <button class="current-close">&#x274C</button>
+    </li>
+
+    <%  for(let i=0;i<current.length;i++){%>
+        <li>
+        <input class="checkbox" type="checkbox" name="current-checkbox">
+        <h3><%= current[i] %></h3>
+        <button class="current-close">&#x274C</button>
+    </li>
+    <% } %>
+  </ul>
+
+  <form  action="/" method="post">
+    <input type="text" name="currentTask" placeholder="Add Task" required>
+    <button type="submit" name="currentSubmit">+</button>
+  </form>
+  
+</div>

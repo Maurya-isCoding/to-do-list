@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do-list</title>
+    <Link rel="stylesheet" href="sytles.css" />
+  </head>
+  <body>
+
+    <h1>To-Do-List</h1>
+
+    <div class="container flex">
+      <%- include("menu.ejs") %>
+
+      <div class="content">
+        <%- include("current.ejs") %> 
+        <%- include("routine.ejs") %>
+      </div>
+
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
